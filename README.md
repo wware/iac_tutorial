@@ -13,7 +13,6 @@ anything else.
 
 ## Set up a Virtualbox sandbox for this stuff
 
-* Download a copy of the 64-bit Intel Ubuntu 16.04 desktop ISO, it is 1.5 gigabytes.
 * Create an empty Ubuntu 16.04 instance from the ISO.
     * Download a copy of the 16.04 desktop ISO. I'm using a 64-bit Intel processor.
     * Choose Ubuntu 64-bit for the type of virtual machine you're creating.
