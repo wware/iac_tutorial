@@ -12,7 +12,7 @@
 * Hit "Start" to begin the installation. Click thru all the standard stuff.
 * Apt-get fun
     * sudo apt-get update; sudo apt-get upgrade
-    * sudo apt-get install -y build-essential vim git curl linux-headers-$(uname -r)
+    * sudo apt-get install -y build-essential vim git curl linux-headers-$(uname -r) xserver-xorg xserver-xorg-core dkms
     * Install Guest Additions CD and click thru the "install this stuff" thing - if on a Mac, you can skip this part
         * Devices > Shared clipboard > Bidirectional
         * Devices > Drag and drop > Bidirectional
