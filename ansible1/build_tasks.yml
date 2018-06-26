@@ -1,0 +1,10 @@
+---
+- name: Pull Ubuntu image
+  docker_image:
+    name: ubuntu
+
+- name: Build simple Flask server
+  docker_image:
+    path: .
+    name: simple_flask
+    tag: 0.1

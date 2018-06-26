@@ -1,15 +1,8 @@
 ---
 - hosts: localhost
   tasks:
-  - name: Pull Ubuntu image
-    docker_image:
-      name: ubuntu
-
-  - name: Build simple Flask server
-    docker_image:
-      path: .
-      name: simple_flask
-      tag: 0.1
+  - name: Build
+    include: build_tasks.yml
 
   - name: Create Flask server container1
     docker_container:
