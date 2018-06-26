@@ -19,7 +19,7 @@ anything else.
     * Get a decent amount of RAM, I'm choosing 6 gig.
     * Create a virtual hard disk, VDI format, dynamically allocated, 20 gigs.
     * System > Processor, enable PAE/NX
-    * Display > Screen, enable 3d acceleration
+    * Display > Screen, enable 3d acceleration, and use a good amount of video RAM (16 meg?) to allow full-screen mode
     * Storage - select the 16.04 ISO as the optical drive for this VM
     * Click OK at the bottom.
 * Hit "Start" to begin the installation. Click thru all the standard stuff.
@@ -33,7 +33,7 @@ anything else.
     * Restart the VM. Not sure if this is strictly necessary at this point.
     * Follow instructions at https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
         * sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-        * sudo apt-get update; sudo apt-get install -y --allow-unauthorized docker-ce
+        * sudo apt-get update; sudo apt-get install -y --allow-unauthenticated docker-ce
         * sudo systemctl status docker     # should show some Docker log statements
         * sudo docker run hello-world     # should show "Hello from Docker!" among other things
     * Follow instructions at https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-16-04
