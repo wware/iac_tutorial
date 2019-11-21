@@ -18,3 +18,11 @@ curl http://localhost:5001/     # value2
 curl http://localhost:5002/     # value3
 sudo ansible-playbook docker_stop.yml
 ```
+
+## Make life a little easier
+
+All these `sudo`s can go away if you do this. You'll probably need to log out and log back in,
+or possibly even reboot your laptop.
+```
+sudo usermod -aG docker $(whoami)
+```
