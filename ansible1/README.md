@@ -5,6 +5,8 @@ I did this work in a Virtualbox VM starting with an Ubuntu 16.04 desktop install
 I installed Ansible and Docker for this work, using Ansible both to construct the Docker
 image and to kick off three Docker instances.
 
+[Super useful Ansible info](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-18-04)
+
 ## Try this
 
 Pull down the repository and run some webserver Docker containers, test them, get rid of them.
