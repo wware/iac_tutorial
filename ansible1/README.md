@@ -28,3 +28,13 @@ or possibly even reboot your laptop.
 ```
 sudo usermod -aG docker $(whoami)
 ```
+
+## Avoid frustration
+
+Building the `simple_flask:0.1` image can be quite time-consuming, and Ansible won't give you any
+visible feedback during that time, so you won't know if anything is going wrong. Personally I hate
+that kind of situation, so I prefer to skip the `docker_build.yml` step and build manually:
+
+```
+docker build -t simple_flask:0.1 --rm .
+```
